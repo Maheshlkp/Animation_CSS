@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacts App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css File Link -->
+    <link rel="stylesheet" type="text/css" href="/css/styling.css">
+    
+
+<body>
+    <nav class="navbar navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--
+            <div class="navbar-header">
+            <a class="navbar-brand" id="homeLogo">
+                <img src="logo.png" class="visa-logo" alt="visa logo">
+                </a>
+            </div>
+-->
+            <div class="collapse navbar-collapse" id="tabs" align="center">
+                <div class="navbar-header">
+                    <div class="navbar-image"> <img id="imgs" src="/img/logo.png" > </div>
+                </div>
+
+                <ul class="nav navbar-nav" id="test">
+                    <li><a id="test1" href="#" role="button" aria-checked="false">Pay With Visa</a></li>&nbsp;
+                    <li><a id="test2" href="#" role="button">Partner With Us</a></li>&nbsp;
+                    <li><a id="test3" href="#" role="button">Run Your Business</a></li>&nbsp;
+                    <li><a id="test4" href="#" role="button">Travel With Visa</a></li>&nbsp;
+                    <li><a id="test5" href="#" role="button">Visa Everywhere</a></li>&nbsp;
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="navline">
+        <div class="nav-indicator-bar" style="background-position: 3315.09px 0px;">
+            <div class="nav-indicator" id="navbar">
+                <div class="arrow" id="image">
+                    <img src="/img/global-nav-indicator.png" alt="Navigation Indication">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        /*trigger this function when ever menu bar option is hit */
+        function getEventTarget(e) {
+            e = e || window.event;
+            return e.target || e.srcElement;
+
+        }
+        /* it will take the divId of the selected menu option*/
+        var ul = document.getElementById('test');
+        ul.onclick = function(event) {
+            var target = getEventTarget(event);
+            //alert(target.innerHTML);
+
+//            console.log("Target", target.id);
+            /* assigning the position of the arrow to the selected menu option*/
+            if (target.id == 'test1') {
+                //paddinglet 200px
+                document.getElementById("navbar").style = "display:block";
+                document.getElementById("image").style.left = "430px";
+
+
+            }
+            if (target.id == 'test2') {
+                //paddinglet 200px
+                document.getElementById("navbar").style = "display:block";
+                document.getElementById("image").style.left = "560px";
+
+
+            }
+            if (target.id == 'test3') {
+                //paddinglet 200px
+                document.getElementById("navbar").style = "display:block";
+                document.getElementById("image").style.left = "750px";
+
+
+            }
+            if (target.id == 'test4') {
+                //paddinglet 200px
+                document.getElementById("navbar").style = "display:block";
+                document.getElementById("image").style.left = "900px";
+
+
+            }
+            if (target.id == 'test5') {
+                //paddinglet 200px
+                document.getElementById("navbar").style = "display:block";
+                document.getElementById("image").style.left = "1070px";
+
+
+            }
+            
+        }
+
+    </script>
+
+</body>
+<script>
+
+
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+
+    #tabs {
+        background-color: #071175;
+        padding: 11px;
+    }
+    
+    .nav>li>a:focus,
+    .nav>li>a:hover,
+    a.active {
+        color: orange;
+        background-color: #071175;
+    }
+    
+    li {
+        float: left;
+        font-size: 1.8rem;
+    }
+    
+    a {
+        color: aliceblue;
+    }
+    
+    .navbar-collapse {
+        padding-right: 0!important;
+        padding-left: 0!important;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px transparent;
+        color: orange;
+    }
+    
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: auto;
+        margin-left: auto;
+        color: orange;
+    }
+    
+    .navbar-image {
+        width: 8em;
+        padding-left: 10px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    
+    .arrow,
+    #image {
+        position: absolute;
+        left: 200px;
+        margin-top: -15px;
+    }
+    
+    .navbar-header {
+        margin-right: 30px;
+        margin-left: 40px;
+        float: left;
+    }
+    
+    .navbar-nav {
+        float: right;
+        margin-right: 310px;
+    }
+    
+    .navline {
+        height: 5px;
+        /*        background: orange;*/
+        background: url(/img/global-nav-indicator-bar.jpg);
+        margin-top: -21px;
+    }
+    
+    .nav-indicator  {
+        left: 2500px;
+        display: none;
+        -webkit-transition: 1s;
+        transition: 1s;
+    transition-property: initial;
+    transition-duration: 1s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    }
+    #imgs{
+    width: 100px; 
+            
+    }
